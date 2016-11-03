@@ -11,9 +11,9 @@ with possibly some suplementray files (`.css`, `image`, ...) . Opening the html 
 
 You are allowed to use a front-end framework or icon font. (e.g. bootstrap, foundation, fontawesome , materialicon)
 
-using SCSS or any css preprocessor will count as a bonus towards your final evaluation
+using SCSS or any css preprocessor will count as a bonus towards your final evaluation.
 
-select card background image is up to you
+You can choose any preferred image for card background.
 
 ## Expectations
 
