@@ -15,6 +15,8 @@ using SCSS or any css preprocessor will count as a bonus towards your final eval
 
 You can choose any preferred image for card background.
 
+You should implement it in response design.
+
 ## Expectations
 
 We expect a clean, readable and maintainable code with meaningful comments.
