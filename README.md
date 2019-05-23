@@ -15,7 +15,7 @@ using SCSS or any css preprocessor will count as a bonus towards your final eval
 
 You can choose any preferred image for card background.
 
-You should implement it in response design.
+You should implement it in responsive design.
 
 ## Expectations
 
