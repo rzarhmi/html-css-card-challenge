@@ -1,0 +1,468 @@
+@font-face {
+    font-family: helveticaFont;
+    src: url("static/fonts/HelveticaNeueCyr-Light.otf");
+}
+
+body{
+    align-items: center;
+}
+
+.wrapper{
+    font-family: helveticaFont;
+    position: absolute;
+    border-radius: 5px 5px 5px 5px;
+    width: 400px;
+    height: 700px;
+    overflow: hidden;
+    left: 50%;
+    /*background-color: #2a2a2b;*/
+    background-color: black;
+    margin-left: -200px ;
+    z-index: -1;
+}
+
+.card-container{
+    z-index: 1;
+}
+.sub-header-img{
+    margin: 0 5px 5px 5px;
+    height: 325px;
+    background-image: url("static/images/starbucks.jpg");
+    background-size: cover;
+    background-position: 70% ;
+    opacity: 0.7;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+
+}
+
+.header{
+    position: relative;
+    font-family: helveticaFont;
+    z-index: 1000;
+    background-color: #1A7BBF;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #F0FFF0;
+    font-size: 20px
+}
+.header-title{
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 3px;
+}
+.header-subtitle{
+    font-size: 0.75em;
+}
+.search-icon{
+    float: right;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.edit-icon{
+    float: left;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer
+}
+.banner{
+    font-size: 12px;
+    padding-top: 5px;
+    font-weight: bold;
+    padding-left: 20px;
+    color: #F0FFF0;
+    z-index: 0;
+    position: absolute;
+    top:70px;
+    right: -60px;
+    background-color: #DA0808;
+    transform: rotate(35deg);
+    width: 200px;
+    height: 20px;
+    text-align: center;
+}
+.info{
+    position: absolute;
+    color: #F0FFF0;
+    top: 75px;
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+}
+.info-title{
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+.info-subtitle{
+    font-size: 0.75em;
+}
+
+.starbucks-icon{
+    width: 100px;
+    height: 100px;
+}
+.helping-icons{
+    position: absolute;
+    width: 100%;
+    top: 275px;
+    height: 70px;
+    align-items: center;
+}
+
+.phone-icon, .location-icon, .panel-icon{
+    display: table-cell;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #F0FFF0;
+    transition: border-color 250ms ease-in-out;
+    cursor: pointer;
+}
+
+.phone-icon:hover, .location-icon:hover, .panel-icon:hover{
+    border-color: #1A7BBF;
+}
+
+.phone-svg-icon, .location-svg-icon, .panel-svg-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.phone-svg-icon path, .location-svg-icon path, .panel-svg-icon path {
+    fill: #F0FFF0;
+    transition: all 250ms ease-in-out;
+}
+
+.phone-icon:hover .phone-svg-icon path{
+    transition: all 250ms ease-in-out;
+    fill: #1A7BBF;
+}
+
+.location-icon:hover .location-svg-icon path{
+    transition: fill 250ms;
+    fill: #1A7BBF;
+}
+
+.panel-icon:hover .panel-svg-icon path{
+    transition: fill 250ms;
+    fill: #1A7BBF;
+}
+
+.phone-not-rounded, .location-not-rounded, .panel-not-rounded{
+    float: left;
+
+}
+
+.phone-not-rounded{
+    margin-left: 100px;
+}
+
+.location-not-rounded{
+    margin-left: 10px;
+}
+
+.panel-not-rounded{
+    margin-left: 10px;
+}
+
+.avatar-icon{
+    position: absolute;
+    bottom: -20%;
+    right: 7%;
+}
+
+.avatar-svg-icon{
+    width: 20px;
+    height:20px;
+}
+
+.avatar-svg-icon path{
+    fill: #A3AFFF;
+    transition:all 450ms ease-in-out ;
+}
+
+.avatar-icon:hover .avatar-svg-icon path{
+    fill: #1A7BBF;
+}
+
+.sub-footer{
+    position: relative;
+    height: 230px;
+    background-color: #EEE7E1;
+}
+
+.action-container{
+    background-color: white;
+    height: 60%;
+    box-shadow: 0 3px 2px -2px grey;
+}
+
+.status{
+    position: relative;
+    width: 360px;
+    height: 75px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    /*border: 1px solid black;*/
+    border-radius: 7px;
+    -webkit-box-shadow: 0 0 1px 1px #CCCCCC;
+    -moz-box-shadow: 0 0 1px 1px #CCCCCC;
+    box-shadow: 0 0 1px 1px #CCCCCC;
+    top: -10px;
+}
+
+.status:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.status-details{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    display: table;
+}
+
+.status-detail-paragraph{
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.status-detail-number{
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.status-detail-desc{
+    color: #999999;
+    font-size: 17px;
+    font-weight: 800
+}
+
+.action-buttons{
+    position: relative;
+    top: -10px;
+    height: 53%;
+    width: 360px;
+    margin: 0 auto;
+    display: table;
+}
+
+.button-container{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.approve-button{
+    float: left;
+    background-color: #04CC33;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 50%;
+    height: 60%;
+    margin-right: 10%;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 450ms ease-in-out;
+}
+
+.approve-button:hover{
+    background-color: forestgreen;
+}
+
+.table-full{
+    display: table;
+    width: 40%;
+    height: 60%;
+    border-collapse: separate;
+}
+
+.table-cell-left, .table-cell-right {
+    display: table-cell;
+    vertical-align: middle;
+    border-left: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    text-align: center;
+    width: 50%;
+    cursor: pointer;
+}
+
+
+.table-cell-left{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.table-cell-right{
+    border-right: 1px solid #CCCCCC;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.like-svg-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.expand-svg-icon{
+    width: 22px;
+    height:22px;
+}
+
+.like-svg-icon path, .expand-svg-icon path{
+    fill: #00AEF7;
+    transition: all 250ms ease-in-out;
+}
+
+.table-cell-right:hover .like-svg-icon path{
+    fill: #04CC33;
+}
+
+.table-cell-left:hover .expand-svg-icon path{
+    fill: #04CC33;
+}
+
+.footer-address{
+    position: absolute;
+    bottom: 0;
+    width: 380px;
+    height: 80px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    left: 50%;
+    transform:translate(-50%);
+    background-color: white;
+    display: table;
+}
+
+.address-details{
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: table;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.starbucks-address-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.address-img{
+    display: table-cell;
+    vertical-align: middle;
+    width: 15%;
+}
+
+.address-text{
+    display: table-cell;
+    vertical-align: middle;
+    width: 85%;
+}
+
+.address-title{
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.address-subtitle{
+    font-size: 14px;
+    font-weight: bolder;
+    color: #999999;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 89px;
+}
+
+.footer-menu{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: table;
+    vertical-align: middle;
+    color: white;
+    font-size: 17px;
+    font-weight: 900;
+    /*font-size: 15px;*/
+    table-layout: fixed;
+    cursor: pointer;
+}
+
+.menu-item-I, .menu-item-II, .menu-item-III, .menu-item-IIII{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.menu-item-I{
+    width: 16.66%;
+    background-image: -webkit-linear-gradient(left, #000000, #555555);
+    background-image:         linear-gradient(to right, #000000, #555555);
+    color:transparent;
+    -webkit-background-clip: text;
+}
+
+.menu-item-II{
+    width: 16.66%;
+    background-image: -webkit-linear-gradient(left, #555555, #FFFFFF);
+    background-image:         linear-gradient(to right, #555555, #FFFFFF);
+    color:transparent;
+    -webkit-background-clip: text;
+}
+
+
+.menu-item-III{
+    width: 33.33%;
+    color: #04CC33;
+}
+
+
+.menu-item-IIII{
+    width: 33.33%;
+    max-width: 100px;
+    background-image: -webkit-linear-gradient(left, #FFFFFF, #000000);
+    background-image:         linear-gradient(to right, #FFFFFF, #000000);
+    color:transparent;
+    -webkit-background-clip: text;
+}
+
+
+
+.menu-line{
+    border-bottom: 5px solid #6D75D5;
+    content: "";
+    width: 20%;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
